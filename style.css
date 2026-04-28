@@ -1,1 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #050505);
+    color: #f5f5f5;
+}
 
+/* layout */
+.page-shell {
+    min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+    padding: 90px 20px 60px;
+    text-align: center;
+}
+
+.hero-panel {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* crest */
+.crest {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 2px solid gold;
+    display: grid;
+    place-items: center;
+    background: #0b0b0b;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+}
+
+.crest span {
+    color: gold;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* text */
+.eyebrow {
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+}
+
+h1 {
+    color: gold;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.hero-copy {
+    color: #ddd;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* buttons */
+.hero-actions {
+    margin-top: 25px;
+}
+
+.join-btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, gold, #b8860b);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px gold;
+}
+
+.secondary-link {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* sections */
+.content-block {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-eyebrow {
+    color: gold;
+    letter-spacing: 3px;
+}
+
+/* features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,215,0,0.1);
+}
+
+/* spotlight */
+.spotlight-card {
+    background: #0d0d0d;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,215,0,0.15);
+    text-align: center;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    border-top: 1px solid rgba(255,215,0,0.1);
+}
+
+@media (max-width: 900px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
